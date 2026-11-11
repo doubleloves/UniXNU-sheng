@@ -293,10 +293,10 @@ CI_ENABLE_METAL_GPU = "0"
 "archives" = ["build-corecrypto-14.py", "build-corecrypto-14.py --namespace", "component:ArmDTPlatform", "component:ArmCpu", "build-libpthread-kernel.py", "component:AppleKeyStoreState", "component:SoftwareAES", "build-gop-legacy-display-27.py"]
 
 ["os_overrides"."macos-26.5-25F71"."components"]
-"include" = ["ArmDTPlatform", "ArmCpu", "XnuPrelink", "DarwinBoot", "ShengPreflight", "ShengUfs", "RamBlock", "GopFramebuffer", "AppleKeyStoreState", "Adreno740", "AdrenoMetal", "SoftwareAES"]
+"include" = []
 
 ["os_overrides"."macos-26.5-25F71"."kernel"]
 "defconfig" = "sheng_macos_defconfig"
-"archives" = ["build-corecrypto-14.py", "build-corecrypto-14.py --namespace", "component:ArmDTPlatform", "component:ArmCpu", "build-libpthread-kernel.py", "component:AppleKeyStoreState", "component:SoftwareAES", "build-gop-legacy-display-27.py"]
+"archives" = []
 "config_fragments" = ["arch:configs/common.config", "os:configs/macos.config"]
-"patch_series" = ["os:patches/xnu-12377/base-series", "soc:patches/xnu-12377/series", "os:patches/xnu/series", "device:patches/xnu-12377/series"]
+"patch_series" = ["os:patches/xnu-12377/base-series-min", "os:patches/xnu/series-min"]
