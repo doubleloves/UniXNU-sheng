@@ -297,6 +297,6 @@ CI_ENABLE_METAL_GPU = "0"
 
 ["os_overrides"."macos-26.5-25F71"."kernel"]
 "defconfig" = "sheng_macos_defconfig"
-"archives" = []
+"archives" = ["build-corecrypto-14.py", "build-corecrypto-14.py --namespace"]
 "config_fragments" = ["arch:configs/common.config", "os:configs/macos.config"]
 "patch_series" = ["os:patches/xnu-12377/base-series-min", "os:patches/xnu/series-min"]
